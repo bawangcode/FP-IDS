@@ -67,6 +67,7 @@ function botbattler(action = '', minElapsedSecs = 4.0, formId = '') {
   form.addEventListener('submit', event => {
     if (BOTBATTLER_SECRET != botInput.value) {
       event.preventDefault() // Cancels submission
+      window.location.href = "http://52.163.255.1/detectedasabot.php";
     }
   })
 
